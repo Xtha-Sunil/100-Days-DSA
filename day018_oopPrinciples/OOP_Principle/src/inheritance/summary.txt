@@ -1,0 +1,28 @@
+Single Inheritance
+A => B i.e B extends A
+
+
+Multi level inheritance
+A => B => C i.e B extends C and C extends B
+
+
+Multiple Inheritance
+A => B <= C i.e B extends A and B extends C
+					if A and C has same property then B will be confused which one to call. So, java dont support this.
+
+
+Hierarchical  Inheritance
+D <= A => E
+B <= A => C
+Many class extends one class.
+
+
+Hybrid Inheritance    [Not in java]
+B <= A => C
+||																			||
+===> D <===
+Present single and double inheritance
+
+
+A class cant be its own super class.
+i.e A extends A is not possible.

@@ -1,0 +1,8 @@
+space complixity = auxiliary space + input space
+
+auxiliary space is extra or temporary space used by algorithm
+
+merge sort use O(N) auxiliary space
+insertion and heap sort uses O(1) auxiliary space
+
+but space complexity for all of these is O(N)

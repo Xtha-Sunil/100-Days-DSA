@@ -1,0 +1,34 @@
+6Polymorphism means different way to express same thing.
+
+1. Compile-Time polymorphism / Static Polymorphism
+=> Achieved by method overloading [operator overloading is not supported in java ]
+
+Method overloading means methods with same name but different types, arguments, return types and order.
+
+A a1 = new A();
+A a2 = new A(1.0,2);
+
+
+
+2. Runtime or Dynamic
+=> Achieved by method overriding
+Overriding means same name, same arguments, same return type, same order but body is different.
+
+
+Overriding is possible only when refrence variable is of super-class and object is of sub-class.
+
+Parent obj = new Child();
+
+Here which property to access is determined by refrence variable.
+
+and which method to run is determined by the object, this is k/a upcasting.
+
+How java determine which method to run??
+=> By dynamic method dispatch
+
+
+
+3. Final class cant be overridden or inherited
+
+4. Staic method lai override garna mildena
+

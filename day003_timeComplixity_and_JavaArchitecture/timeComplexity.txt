@@ -1,0 +1,53 @@
+Time Complexity != Actual Time Taken
+
+Time complexity is function that give us the relationship about how time will grow as input grows;
+
+1] Some points to consider to :
+1. Always look for worst case
+	-If worst case is less then obviously best case will be less
+
+ 2. Always look for large number of data
+	-For small amount of data, computation will be faster so we dont have to worry about it
+
+3. We dont care about actual time so we ignore constant
+	- Actual time can vary machine to machine
+
+ 4. We ignore less dominating term
+   eg: O( (1,000,000)^3 + log(1,000,000))
+   	= O( (1,00,000)^3 + 6 )
+   	one million cube + 6;
+   	does 6 matter here? So we can ignore less dominating term
+
+
+2] Big-O notation
+It is upper bound, that the algorithm will never exceed the given complexity
+
+eg: O(N^3) means that the algorithm may be executed on O(1), O(N), O(N^2)
+or any other complexity less than or equal to O(N^3) but never exceed it
+
+Mathematically
+if f(N) has complexity of O(g(N)) then,
+
+  lim  f(N) ÷ g(N) < ∞
+N→∞ 
+
+
+3] Big Omega : For best case : Opposite of Big-O 
+Ω(N^3) means minimum time complexity is N^3 
+  lim  f(N) ÷ g(N) > 0
+N→∞ 
+
+
+4] Big Theta : Average  Θ( )
+0 <  lim    f(N) ÷ g(N) < ∞
+      N→∞
+
+5] small o means loose upper bound
+o(N) means algorithm has time complexity less than but never equal to N.
+  lim  f(N) ÷ g(N) = 0
+N→∞ 
+
+6] small omega means loose lower bound
+ω(N) means algorithm has time complexity always more than N
+  lim  f(N) ÷ g(N) = ∞
+N→∞ 

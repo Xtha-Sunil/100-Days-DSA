@@ -1,0 +1,42 @@
+Summary of what I learn
+1. String are immutable
+2. String are stored in `string pool`
+3. string pool is one of memory location in heap
+4. if same string is present in string pool there is no creation of new string
+	String a= "sunil";
+	String b = "sunil";
+	String variable 'a' and 'b' are both pointing to same object
+
+5. Then what if we modify one of the variable? (b = "xtha")
+=> As point number 1 suggest string will never be modified, hence
+on modification the variable on change will point to new string.
+
+6. Why string pool?
+For memory optimization
+
+7. How can we say that two string with same value point same object?
+=> By using == operator. 
+	String a= "sunil";
+	String b = "sunil";
+	sout(a==b) // true as they are same object
+
+
+8. Why stringBuilder?
+String alphabets = "";
+for(int i=0; i<26; i++)
+	alphabets += (char)('a' + i);
+sout(alphabets);
+
+Due to immutability `alphabets` will point to "a'' then "ab" then "abc".... to "abcdef...yz"; this will create new string every single time and keeps pointing to new string and at end "a", "ab", ....., "abc...wxy" remains unrefrenced and only takes space in memory
+
+Also TimeComplexity for above code will be O(N^2)
+
+So StringBuilder comes to rescue;
+StringBuilder sb  = new StringBuilder()
+for(int i=0; i<26; i++){
+	char ch = (char)('a' + i);
+	sb.append(ch)
+}
+sout(sb);
+
+Time Complexity = O(N)

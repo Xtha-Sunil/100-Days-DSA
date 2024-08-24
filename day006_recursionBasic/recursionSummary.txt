@@ -1,0 +1,37 @@
+- Recursion is function calling itself until base case is not satisfied
+- Recursive approach is approach in which bigger task is broken into smaller task by passing changed arguments.
+
+ -  if base condition is not defined or not satisfied then there will be recursive call again and again until the memory is available and when there is no memory left then the program will crash which is called Stack Overflow error.
+ 
+ - Why recursion?
+ 1) Helps to solve bigger/complex problem easily.
+ 2) problems complex in iteration may be easy in recursion
+ 3) space complixity is not constant
+ 
+ 
+-  Tail recursion
+ If a function is calling itself and that recursive call is the last statement in a function then it is called tail recursion. After that call there is nothing, it is not performing anything, so, it is called tail recursion.
+
+- recurrance relation
+If we can write the recursive function in formula, it is called recurrance relation.
+	eg : fibonacci number:   fibo(N) = fibo(N-1) + fibo(N-2)
+
+- How to learn recursion
+1. identify if we can break problem into small problem
+2. write recurrance relation if possible
+3. draw recursive tree
+	- see flow of function how they are getting in.
+	- identify left and right tree calls
+	- see pointer and flow of functions
+4. how and what value are return
+5. focus on 3 variables
+	- Arguments
+	- return value
+	- variable inside function
+
+- when to use which variable
+If the variable is need to be used in next function calk them use it as argument else use inside the method.
+
+- Types of r
+	- Linear recurrance relation ;; eg : fibonacci
+	- Divide and conquer ;; eg binary search

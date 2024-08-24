@@ -1,0 +1,22 @@
+Class is like blueprint or template which is used to create custom data type as per need.
+
+1. Declaration of class is done by :
+ class ClassName{
+ 	[methods
+ 	...
+ 		]
+ }
+ 
+2.  instance of class is created by :
+ ClassName varName = new ClassName( [para1, para2...] );
+ 
+3.  new keyword is used to make object/instance of class and the object is stored in heap memory.
+
+4. Primitive data types are not objectified with 'new' keyword because heap is slower than stack memory.
+
+5. If we want to create object of primitive data type then it is only possible by the help of wrapper class
+like this : Integer a = new Integer(5);
+
+6. We cant destroy object on our own in java. It is automatically handled by Garbage Collector.
+
+7. We can do constructor overloading of class by varying the number of arguments.
